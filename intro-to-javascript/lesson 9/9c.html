@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9c</title>
+    <style></style>
+  </head>
+  <body>
+    <button
+      onclick="
+      playGame('heads');
+      "
+    >
+      heads
+    </button>
+    <button
+      onclick="
+    playGame('tails');
+    "
+    >
+      tails
+    </button>
+    <p class="js-moves"></p>
+    <script>
+      function playGame(result) {
+        document.querySelector(".js-moves").innerHTML = `You chose: ${result}`;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9h</title>
+    <style></style>
+  </head>
+  <body>
+    <input
+      placeholder="Type something"
+      class="js-text-input"
+      onkeyup="displayText();"
+    />
+
+    <p class="js-text-display"></p>
+    <script>
+      function displayText() {
+        const inputElement = document.querySelector(".js-text-input");
+        const text = inputElement.value;
+        document.querySelector(".js-text-display").innerHTML = ` ${text}`;
+      }
+    </script>
+  </body>
+</html>

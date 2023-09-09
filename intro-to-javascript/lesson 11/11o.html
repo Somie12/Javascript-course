@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>11o</title>
+    <style></style>
+  </head>
+  <body>
+    <script>
+      function findSearch(arr) {
+        let index = -1;
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] === "search") {
+            index = i;
+          }
+        }
+        return index;
+      }
+      console.log(findSearch(["apple", "grapes", "search", "tomato"]));
+      console.log(findSearch(["apple", "grapes", "tomato"]));
+    </script>
+  </body>
+</html>

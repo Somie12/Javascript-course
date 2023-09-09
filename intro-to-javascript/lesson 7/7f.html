@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>7f</title>
+    <style></style>
+  </head>
+  <body>
+    <script>
+      function convertToTemperature(degrees, unit) {
+        let str = "";
+        if (unit == "C") {
+          let fahrenheit = celsius * (9 / 5) + 32;
+          str = fahrenheit + "F";
+        } else if (unit == "F") {
+          let celsius = (fahrenheit - 32) * (5 / 9);
+          str = celsius + "C";
+        }
+
+        return str;
+      }
+      convertToTemperature(25, "C");
+      convertToTemperature(86, "F");
+    </script>
+  </body>
+</html>

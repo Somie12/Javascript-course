@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booleans</title>
+    <style></style>
+  </head>
+  <body>
+    <script>
+      true;
+      false;
+
+      console.log(3 > 5);
+      // == converts both value to same data type
+      // === checks if both value are equal without converting - more preferable
+      // !== checks if both value are not equal without converting - more preferable
+
+      // !=  converts both value to same data type and checks if they are not equal
+      colsole.log(5 === "5.00");
+      const age = 15;
+      if (true) {
+        console.log("hello");
+      } else {
+        console.log("else");
+      }
+
+      if (age >= 16) {
+        console.log("You can drive");
+      } else if (age >= 14) {
+        console.log("Almost there!");
+      } else {
+        console.log("You can drive");
+      }
+
+      console.log(true && true);
+      console.log(true || false);
+      console.log(!true);
+
+      if (5) {
+        //5 - runs the code inside if -- truthy value
+        console.log("truthy");
+      }
+      if (0) {
+        //0- doesn't run the code - falsy value
+        console.log("truthy");
+      }
+      /*List of Falsy Values(All other values are trthy)
+      false
+      0
+      ''
+      NaN
+      undefined
+      null
+       */
+
+      const cartQuantity = 5;
+      if (cartQuantity) {
+        console.log("Cart has products");
+      }
+      console.log(!0);
+      console.log("text" / 5); //js will give NaN as result - Not a Number - for some invalid math operations
+      let variable1;
+      console.log(variable1); // will give undefined as result
+      const variable2 = undefined; // with const, will have to type this entire line for using undefined
+
+      const result = true ? "truthy" : "falsy";
+      console.log(result); // will return truthy as result
+
+      result = 0 ? "truthy" : "falsy";
+      console.log(result); // will return falsy as result
+
+      false && console.log("hello"); //short circuit evaluation - && will not even evaluate the second first when first part encountered is wrong. shortcut for statement --
+      // if(condition) { console.log('hello');}
+
+      const message = false && "hello";
+      message = 5 && "hello";
+      console.log(message);
+
+      const currency = "EUR" || "USD"; //or operator will stop early and won't even check the second part
+      console.log(currency);
+
+      currency = undefined || "USD"; //shortcut for - if(!condition){currency = 'USD';}
+      console.log(currency); //will not short circuit and check both parts
+    </script>
+  </body>
+</html>
